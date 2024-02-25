@@ -1,20 +1,64 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<div class="all">
+  <audio src="../../assets/Y2meta.app - Pokemon Theme Song Instrumental~ (128 kbps).mp3" autoplay="autoplay" loop="loop"></audio>
+  <div class="header">
+    <div class="headerUp">
+      <div class="ojoIzq">
+        <img src="../../assets/OjoIzqr.png" alt="">
+      </div>
+      <div class="ojoDer">
+        <img src="../../assets/OjoDer.png" alt="">
+      </div>
+    </div>
+    <div class="headerDown">
+      <div class="logoPoke">
+        <img src="../../assets/cosopoke.png" alt="">
+      </div>
+    </div>
   </div>
-</ion-content>
+  <div class="body">
+    <div class="up">
+      <div class="barraNav">
+        <ion-item class="input">
+          <ion-input  [(ngModel)]="valor" type="text"  class="pre" placeholder="¿Quién es ese Pokemon?"></ion-input>
+          <ion-button  color="secondary" (click)="getPokemonData()" shape="round"><img src="../../assets/logoBusqueda.png" alt=""></ion-button>
+        </ion-item>
+        
+      </div>
+    </div>
+    <div class="midle">
+      <div class="pantalla">
+        <ion-card class="carta">
+          <div class="cartup">
+          <div class="imgC">
+            <ion-img [src]="pokemon.sprites.front_default"></ion-img>
+          </div>
+          <ion-card-header class="headerup">
+            <ion-card-title class="tit">Name: {{pokemon.name}}</ion-card-title>
+            <ion-card-title class="sub">ID: {{pokemon.id}}</ion-card-title>
+            
+            
+          </ion-card-header >
+          </div>
+          
+          <h1 class="desc" *ngFor="let type of pokemon.types; index as i">Type: {{pokemon.types[i].type.name}}</h1>
+          <ion-card-content class="desc">
+            
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+    <div class="down">
+      <div class="detalles">
+        <div class="detallesIzq">
+          <img src="../../assets/camarita.png" alt="">
+          <img src="../../assets/bolitaroja.png" alt="">
+          <img src="../../assets/bolitaamarilla.png" alt="">
+          <img src="../../assets/bolitaverde.png" alt="">
+        </div>
+        <div class="detallesDer">
+          <img src="../../assets/iconopokeabajo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

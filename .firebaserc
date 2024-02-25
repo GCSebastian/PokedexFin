@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pokegaiborcarpio": {
+      "hosting": {
+        "app": [
+          "pokegaiborcarpio"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pokegaiborcarpio"
+  }
+}

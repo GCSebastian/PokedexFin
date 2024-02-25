@@ -1,27 +1,142 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+@import url('https://fonts.cdnfonts.com/css/pokemon-hollow');
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+.all{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(250, 112, 112, 1) 5.999999865889549%,
+    rgba(240, 33, 33, 1) 48.500001430511475%,
+  );
+}
+.header{
+  width: 100%;
+  height: 30%;
+  
+}
+.headerUp{
+  width: 100%;
+  height: 60%;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.headerDown{
+  width: 100%;
+  height: 40%;
+  
+  display: flex;
+  justify-content: center;
+}
+.body{
+  width: 100%;
+  height: 70%;
+  
+}
+.up{
+  width: 100%;
+  height: 3.5rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.midle{
+  width: 100%;
+  height: 30.2rem;
+  
+}
+.pantalla{
+  width: 100%;
+  height: 100%;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+
+.down{
+  width: 100%;
+  height: 17%;
+  background-color: rgb(166, 5, 5);
+  display: flex;
+}
+.detalles{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.detallesIzq{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.detallesDer{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  
+}
+.barraNav{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tipos{
+  display: flex;
+  font-size: x-large;
+  font: bold;
+  color: black;
+}
+.input{
+  --border-radius: 30px;
+  --border-width: 2px;   
+  --border-color: #ccc;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.pre{
+  font-family: 'Pokemon Solid', sans-serif;
+  color: rgb(0, 0, 0);
 }
 
-#container a {
-  text-decoration: none;
+.cartup{
+  height: 50%;
+  width: 100%;
+  
+  display: flex;
+}
+.imgC{
+  height: 11rem;
+  width: 50%;
+  
+}
+.headerup{
+  height: 100%;
+  width: 50%;
+  
+}
+.tit{
+  height: 60%;
+  width: 100%;
+  font-family: 'Pokemon Hollow', sans-serif;
+  color: rgb(0, 0, 0);
+  font: bolder;
+}
+.sub{
+  height: 40%;
+  width: 100%;
+  font-family: 'Pokemon Hollow', sans-serif;
+  color: rgb(0, 0, 0);
+  font: bolder;
+}
+.desc{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  font-family: 'Pokemon Solid', sans-serif;
+  color: rgb(0, 0, 0);
 }
