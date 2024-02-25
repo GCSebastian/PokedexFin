@@ -1,0 +1,7 @@
+{
+  "name": "PokedexFin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
