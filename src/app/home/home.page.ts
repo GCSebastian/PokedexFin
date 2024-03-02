@@ -54,6 +54,47 @@ export class HomePage {
     this.tableled1= doc(this.db,'Leds','Led');
     await setDoc(this.tableled1, { color:"cafe" });
   }
+  async encenderCelesteD(){
+    this.tableled1= doc(this.db,'Leds','Led');
+    await setDoc(this.tableled1, { color:"celesteD" });
+  }
+  async encenderMoradoG(){
+    this.tableled1= doc(this.db,'Leds','Led');
+    await setDoc(this.tableled1, { color:"moradoG" });
+  }
+  async encenderCelesteF(){
+    this.tableled1= doc(this.db,'Leds','Led');
+    await setDoc(this.tableled1, { color:"celesteF" });
+  }
+  async encenderRosado(){
+    this.tableled1= doc(this.db,'Leds','Led');
+    await setDoc(this.tableled1, { color:"rosado" });
+  }
+  async encenderRojoPelea(){
+    this.tableled1= doc(this.db,'Leds','Led');
+    await setDoc(this.tableled1, { color:"rojoP" });
+  }
+  async encenderGris(){
+    this.tableled1= doc(this.db,'Leds','Led');
+    await setDoc(this.tableled1, { color:"gris" });
+  }
+  async encenderCeleste(){
+    this.tableled1= doc(this.db,'Leds','Led');
+    await setDoc(this.tableled1, { color:"celeste" });
+  }
+  async encenderNegro(){
+    this.tableled1= doc(this.db,'Leds','Led');
+    await setDoc(this.tableled1, { color:"negro" });
+  }
+  async encenderGrisClaro(){
+    this.tableled1= doc(this.db,'Leds','Led');
+    await setDoc(this.tableled1, { color:"grisC" });
+  }
+  async encenderRosa(){
+    this.tableled1= doc(this.db,'Leds','Led');
+    await setDoc(this.tableled1, { color:"rosa" });
+  }
+
   
   
 
@@ -67,32 +108,56 @@ export class HomePage {
           for (let i = 0; i < this.pokemon.types.length; i++) {
             //console.log(this.pokemon.types[i].type.name);
 
-            if (this.pokemon.types[i].type.name.toLowerCase() === "water") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "water") {
               this.encenderAzul();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "grass") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "grass") {
               this.encenderVerde();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "fire") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "fire") {
               this.encenderRojo();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "electric") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "electric") {
               this.encenderAmarillo();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "dragon") {
-              this.encenderTomate();
+            if (this.pokemon.types[0].type.name.toLowerCase() === "dragon") {
+              this.encenderCelesteD();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "ghost") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "ghost") {
+              this.encenderMoradoG();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "poison") {
               this.encenderMorado();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "poison") {
-              this.encenderVerdeO();
-            }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "normal") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "normal") {
               this.encenderBlanco();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "flying") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "flying") {
+              this.encenderCelesteF();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "ground") {
               this.encenderCafe();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "psychic") {
+              this.encenderRosado();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "fighting") {
+              this.encenderRojoPelea();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "rock") {
+              this.encenderGris();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "ice") {
+              this.encenderCeleste();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "dark") {
+              this.encenderNegro();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "steel") {
+              this.encenderGrisClaro();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "fairy") {
+              this.encenderRosa();
             }
           }
         }));
@@ -103,32 +168,56 @@ export class HomePage {
           for (let i = 0; i < this.pokemon.types.length; i++) {
             //console.log(this.pokemon.types[i].type.name);
 
-            if (this.pokemon.types[i].type.name.toLowerCase() === "water") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "water") {
               this.encenderAzul();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "grass") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "grass") {
               this.encenderVerde();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "fire") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "fire") {
               this.encenderRojo();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "electric") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "electric") {
               this.encenderAmarillo();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "dragon") {
-              this.encenderTomate();
+            if (this.pokemon.types[0].type.name.toLowerCase() === "dragon") {
+              this.encenderCelesteD();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "ghost") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "ghost") {
+              this.encenderMoradoG();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "poison") {
               this.encenderMorado();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "poison") {
-              this.encenderVerdeO();
-            }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "normal") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "normal") {
               this.encenderBlanco();
             }
-            if (this.pokemon.types[i].type.name.toLowerCase() === "flying") {
+            if (this.pokemon.types[0].type.name.toLowerCase() === "flying") {
+              this.encenderCelesteF();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "ground") {
               this.encenderCafe();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "psychic") {
+              this.encenderRosado();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "fighting") {
+              this.encenderRojoPelea();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "rock") {
+              this.encenderGris();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "ice") {
+              this.encenderCeleste();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "dark") {
+              this.encenderNegro();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "steel") {
+              this.encenderGrisClaro();
+            }
+            if (this.pokemon.types[0].type.name.toLowerCase() === "fairy") {
+              this.encenderRosa();
             }
           }
         }));
@@ -140,3 +229,8 @@ export class HomePage {
 
   
 }
+
+  
+
+  
+
